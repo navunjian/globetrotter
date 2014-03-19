@@ -32,7 +32,6 @@ body {
 }
 
 
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -171,8 +170,9 @@ main {
 .background {
     width:600px;
     height:200px;
-    background: rgba(0, 0, 25, .9);
-    margin-left: 275px; 
+    background: rgba(0, 0, 25, .8);
+    margin-left: auto;
+    margin-right: auto;
     border-radius:10px;   
     border:rgba(0, 0, 25, .8) solid 0px;
 }
