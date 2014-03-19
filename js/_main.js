@@ -30,7 +30,6 @@
 		      adjustWindow();
 		      
 		      // Init navigation
-		      initHomepageNav();
 		      
 		      // Fade in sections
 			  $body.removeClass('loading').addClass('loaded');
