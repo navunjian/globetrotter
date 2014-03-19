@@ -25,12 +25,13 @@ body {
 
 .background p {
     margin-top:80px;
-    margin-left:100px;
+    margin-left:auto;
+    margin-right:auto;
     font-size:18px;
 
 }
 
-}
+
 
 
 /*
@@ -172,7 +173,8 @@ main {
     width:600px;
     height:200px;
     background: rgba(0, 0, 25, .8);
-    margin-left: 275px; 
+    margin-left: auto;
+    margin-right: auto;
     border-radius:10px;   
     border:rgba(0, 0, 25, .8) solid 0px;
 }
