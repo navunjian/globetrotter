@@ -31,6 +31,13 @@ body {
     font-family:"fanwood text";
 }
 
+#logoimage{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top:20%;
+}
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i

@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <!--the filter-->
@@ -39,9 +40,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img  id="logoimage" src="img/globeFINAL_Color.png"/></a>
-        </div>
 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <a class="navbar-brand" href="index.html"><img  id="logoimage" src="img/globeFINAL_Color.png"/></a>
+
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="searchpage.html">Explore Map</a></li>
+                <li><a href="#">My Trip</a></li>
+                <li><a href="#">Packages</a></li>
+            </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -720,14 +729,7 @@
     </div>
 </div>
 
-<div id="cart">
-    <h1 class="ui-widget-header">Shopping Cart</h1>
-    <div class="ui-widget-content">
-        <ol>
-            <li class="placeholder">Add your items here</li>
-        </ol>
-    </div>
-</div>
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -777,26 +779,7 @@
             });
 
         });
-        $( ".marker" ).draggable({
-            appendTo: "body",
-            helper: "clone"
-        });
-        $( "#cart ol" ).droppable({
-            activeClass: "ui-state-default",
-            hoverClass: "ui-state-hover",
-            accept: ":not(.ui-sortable-helper)",
-            drop: function( event, ui ) {
-                $( this ).find( ".placeholder" ).remove();
-                $( "<li></li>" ).text( ui.draggable.val() ).appendTo( this );
-            }
-        }).sortable({
-                    items: "li:not(.placeholder)",
-                    sort: function() {
-// gets added unintentionally by droppable interacting with sortable
-// using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
-                        $( this ).removeClass( "ui-state-default" );
-                    }
-                });
+
     });
 </script>
 
