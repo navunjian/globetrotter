@@ -26,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="searchpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/searchpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="772" column="0" selection-start="52280" selection-end="52280" vertical-scroll-proportion="-73.85185" vertical-offset="11902" max-vertical-offset="14112">
+            <state line="641" column="18" selection-start="45172" selection-end="45172" vertical-scroll-proportion="-1.1325581" vertical-offset="12512" max-vertical-offset="14328">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.18837209" vertical-offset="0" max-vertical-offset="3384">
+            <state line="4" column="68" selection-start="164" selection-end="164" vertical-scroll-proportion="29.333334" vertical-offset="864" max-vertical-offset="3204">
               <folding />
             </state>
           </provider>
@@ -47,7 +47,7 @@
       <file leaf-file-name="main1.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="0" selection-start="3936" selection-end="3936" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="8280">
+            <state line="185" column="0" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.0" vertical-offset="3006" max-vertical-offset="8406">
               <folding />
             </state>
           </provider>
@@ -56,7 +56,16 @@
       <file leaf-file-name="sticky-footer-navbar.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/sticky-footer-navbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="792">
+            <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2094" column="28" selection-start="38872" selection-end="38872" vertical-scroll-proportion="0.0" vertical-offset="37548" max-vertical-offset="104382">
               <folding />
             </state>
           </provider>
@@ -65,7 +74,7 @@
       <file leaf-file-name="map.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/map.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="13" selection-start="4838" selection-end="4838" vertical-scroll-proportion="0.0" vertical-offset="6237" max-vertical-offset="6804">
+            <state line="364" column="13" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0" vertical-offset="6183" max-vertical-offset="6768">
               <folding />
             </state>
           </provider>
@@ -97,8 +106,8 @@
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/filter.css" />
         <option value="$PROJECT_DIR$/css/map.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main1.css" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/searchpage.html" />
       </list>
     </option>
@@ -436,20 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2087" column="19" selection-start="38710" selection-end="38710" vertical-scroll-proportion="-0.35005835" vertical-offset="37866" max-vertical-offset="104310">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/sticky-footer-navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery-ui-1.10.4.custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1475" column="22" selection-start="43764" selection-end="43773" vertical-scroll-proportion="-0.96309966" vertical-offset="27072" max-vertical-offset="270252">
@@ -461,28 +456,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/map.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="13" selection-start="4838" selection-end="4838" vertical-scroll-proportion="0.0" vertical-offset="6237" max-vertical-offset="6804">
+        <state line="364" column="13" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0" vertical-offset="6183" max-vertical-offset="6768">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="3936" selection-end="3936" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="8280">
+        <state line="185" column="0" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.0" vertical-offset="3006" max-vertical-offset="8406">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/searchpage.html">
+    <entry file="file://$PROJECT_DIR$/css/sticky-footer-navbar.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="772" column="0" selection-start="52280" selection-end="52280" vertical-scroll-proportion="-73.85185" vertical-offset="11902" max-vertical-offset="14112">
+        <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2094" column="28" selection-start="38872" selection-end="38872" vertical-scroll-proportion="0.0" vertical-offset="37548" max-vertical-offset="104382">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.18837209" vertical-offset="0" max-vertical-offset="3384">
+        <state line="4" column="68" selection-start="164" selection-end="164" vertical-scroll-proportion="29.333334" vertical-offset="864" max-vertical-offset="3204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="641" column="18" selection-start="45172" selection-end="45172" vertical-scroll-proportion="-1.1325581" vertical-offset="12512" max-vertical-offset="14328">
           <folding />
         </state>
       </provider>

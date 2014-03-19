@@ -11,7 +11,7 @@
     <title>Globetrotter!</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
@@ -635,7 +635,21 @@
 
     <div class="container row" id="tables">
         <div class="row">
-            <div class="col-lg-3" id="continentsTable">
+            <div class="col-xs-4">
+                <h3>Price</h3>
+
+                <input type="range" name="points" id="points" value="50" min="0" max="100">Bummin' it<div id="rollin">Rollin' in it</div>
+            </div>
+            <div class="col-xs-2">
+
+                <button id="clearall" class="btn btn-group-lg"><h4>Clear All</h4></button>
+            </div>
+
+        </div>
+        <div class="row">
+
+
+            <div class="col-xs-3" id="continentsTable">
 
                 <h3>Destinations</h3>
 
@@ -657,7 +671,7 @@
 
                 <div class = "tag"><input type="checkbox" id="checkbox-1-9" class="regular-checkbox" Value="Australia"/> <label for="checkbox-1-9"></label> Australia</div>
             </div>
-            <div  class="col-lg-3" id="thingsToDoTable">
+            <div  class="col-xs-3" id="thingsToDoTable">
 
                 <h3>Things To Do</h3>
 
@@ -675,7 +689,7 @@
 
                 <div class = "tag"><input type="checkbox" id="checkbox-2-7" class="regular-checkbox" Value="Shopping" /> <label for="checkbox-2-7"></label> Shopping</div>
             </div>
-            <div class="col-lg-3"  id = "placeToStayTable">
+            <div class="col-xs-3"  id = "placeToStayTable">
 
                 <h3>Places to Stay</h3>
 
@@ -693,7 +707,7 @@
 
                 <div class = "tag"><input type="checkbox" id="checkbox-3-7" class="regular-checkbox"  Value="Villas"/> <label for="checkbox-3-7"></label> Villas</div>
             </div>
-            <div class="col-lg-3"  id = "slider">
+            <div class="col-xs-3"  id = "slider">
 
 
                 <h3>Themes</h3>
@@ -714,18 +728,7 @@
         </div>
 
 
-        <div class="row">
-            <div class="col-lg-4">
-                <h3>Price</h3>
 
-                <input type="range" name="points" id="points" value="50" min="0" max="100">Bummin' it<div id="rollin">Rollin' in it</div>
-            </div>
-            <div class="col-lg-2">
-
-                <button id="clearall" class="btn btn-group-lg"><h4>Clear All</h4></button>
-            </div>
-
-        </div>
     </div>
 </div>
 
