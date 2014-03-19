@@ -3818,6 +3818,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav {
     float: left;
     margin: 0;
+    left: 20%;
+    position:absolute;
   }
   .navbar-nav > li {
     float: left;
