@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Globetrotter!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <!--the filter-->
+    <link href="css/filter.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Fanwood+Text|Niconne|Satisfy|Bad+Script' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img  id="logoimage" src="img/globeFINAL_Color.png"/></a>
+        </div>
+
+    </div>
+</div>
+
+<div id="map">
+    <a href="#"><img class="marker miami NorthAmerica Nightlife Beaches Hotels" id="miami" title="Miami" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker LaJolla NorthAmerica Nightlife Beaches " id="lj" title="La Jolla" src="img/orange-map-marker-hi.png"/></a>
+
+    <a href="#"><img class="marker FraserIsland Australia Nightlife Restaurants OutdoorAdventures Shopping Beaches Hotels Apartments Villa Resorts&Spas" id="fi" title="Fraser Island" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker Hamptons US NorthAmerica Nightlife Restaurants Shopping Beaches Grown-UpsOnly Hotels Apartments Villa Resorts&Spas B&B" id="ham" title="The Hamptons" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker LanikaiBeach Hawaii NorthAmerica Nightlife Restaurants OutdoorAdventures Shopping Beaches Hotels Resorts&Spas" id="lb" title="Lanikai Beach" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker Langkawi Malaysia Asia Nightlife Restaurants OutdoorAdventures Shopping Beaches Hotels" id="lm" title="Langkawi" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker St.Barts NorthAmerica Nightlife Restaurants OutdoorAdventures Grown-UpsOnly Shopping Beaches Hotels B&B" id="sb" title="St. Barts" src="img/orange-map-marker-hi.png"/></a>
+
+    <!--Cruises-->
+    <a href="#"><img class="marker AzamaraClub CentralAmerica Caribbean Nightlife Shopping OutdoorAdventures Cruises Beaches Hotels" id="ac" title="Azamra Club" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker RoyalCaribbean NorthAmerica Caribbean Nightlife Shopping OutdoorAdventures Cruises Beaches Hotels" id="rc" title="Royal Carribean" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker HollandAmerica CentralAmerica Nightlife Shopping OutdoorAdventures Cruises Beaches Hotels " id="ha" title="Holland America" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker RegentSevenSeas Caribbean Shopping Cruises Nightlife Beaches Hotels " id="rss" title="Regent Seven Seas" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker Princess Caribbean Nightlife Cruises Restaurants Beaches Hotels " id="pc" title="Princess" src="img/orange-map-marker-hi.png"/></a>
+
+    <!--family museums-->
+    <a href="#"><img class="marker ImperialWarMuseum Europe Museums Restaurants Hotels Hostels Apartments FamilyTrips" id="iwm" title="Imperial War Museum" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker AnneFrankHouse Europe Museums Restaurants Hotels Hostels Apartments FamilyTrips " id="afh" title="Anne Frank House" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker DeutschesMuseum Europe Museums Restaurants Hotels Hostels Apartments FamilyTrips " id="dm" title="Deutsches Museum" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker PreauDesAccoules Europe Museums Restaurants Hotels Hostels Apartments FamilyTrips " id="pda" title="Preau des Accoules" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker MuseumOfArtHistory Europe Museums Restaurants Hotels Hostels Apartments FamilyTrips " id="mah" title="Museum of Art History" src="img/orange-map-marker-hi.png"/></a>
+
+    <!--family outdoor-->
+    <a href="#"><img class="marker LaCostaResortAndSpa NorthAmerica OutdoorAdventures FamilyTrips Hotels Resorts&Spas" id="lcrs" title="La Costa Resort And Spa" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker SnowbirdSkiResort NorthAmerica OutdoorAdventures FamilyTrips Hotels Resorts&Spas " id="ssr" title="Snowbird Ski Resort" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker Out-N-About NorthAmerica OutdoorAdventures FamilyTrips Hotels " id="ona" title="Out-N-About" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker HiltonWaikoloaVillage NorthAmerica OutdoorAdventures FamilyTrips Hotels Resorts&Spas " id="hwv" title="Hilton Waikoloa Village" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker TanqueVerdeRanch NorthAmerica OutdoorAdventures FamilyTrips Hotels " id="tvr" title="Tanque Verde Ranch" src="img/orange-map-marker-hi.png"/></a>
+
+    <!--Grown up resort-->
+    <a href="#"><img class="marker KatikiesResortAndSpa Europe Nightlife Grown-UpsOnly Beaches Hotels Resorts&Spas Shopping Villas" id="krs" title="Katikies Resort and Spa" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker TheSarojin Asia Nightlife Grown-UpsOnly Beaches Hotels Resorts&Spas Shopping " id="ts" title="The Sarojin" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker LittlePalmIslandResort NorthAmerica Nightlife Grown-UpsOnly Beaches Hotels Resorts&Spas Shopping " id="lpir" title="Little Palm Island Resort" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker TheHouse NorthAmerica Nightlife Grown-UpsOnly Beaches Restaurants Hotels Resorts&Spas Shopping " id="th" title="The House" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker JadeMountain NorthAmerica Nightlife Grown-UpsOnly Beaches Hotels Resorts&Spas Shopping " id="jm" title="Jade Mountain" src="img/orange-map-marker-hi.png"/></a>
+
+    <!-- Nature-->
+    <a href="#"><img class="marker Yellowstone NorthAmerica Nature Landmarks OutdoorAdventures Hostels B&B" id="ys" title="Yellow Stone" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker NiagaraFalls NorthAmerica Nature Landmarks OutdoorAdventures Hostels B&B " id="nf" title="Niagara Falls" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker GreatBarrierReef Australia Nature Landmarks OutdoorAdventures Hostels B&B" id="gbr" title="Great Barrier Reef" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker RedwoodNationalPark NorthAmerica Nature Landmarks OutdoorAdventures Hostels B&B" id="rnp" title="Redwood National Park" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker PanamaCanal CentralAmerica Nature Landmarks OutdoorAdventures Hostels B&B" id="pc" title="Panama Canal" src="img/orange-map-marker-hi.png"/></a>
+
+    <!-- roadtrips -->
+    <a href="#"><img class="marker TheBourbonTrail NorthAmerica RoadTrips Nightlife Restaurants Hotels Hostels B&B" id="tbt" title="The Bourbon Trail" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker FrankPepe's NorthAmerica RoadTrips Nightlife Restaurants Hotels Hostels B&B " id="fp" title="Frank Pepe's" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker Zingerman's NorthAmerica RoadTrips Nightlife Restaurants Hotels Hostels B&B " id="zm" title="Zingerman's" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker JesterKingBrewery NorthAmerica RoadTrips Nightlife Restaurants Hotels Hostels B&B " id="jkb" title="Jester King Brewery" src="img/orange-map-marker-hi.png"/></a>
+    <a href="#"><img class="marker BigSur NorthAmerica RoadTrips Nightlife Restaurants OutdoorAdventures Hotels Hostels B&B " id="bs" title="Big Sur" src="img/orange-map-marker-hi.png"/></a>
+
+
+    <img  id="mapimage" src="img/worldmap.svg"/>
+</div>
+
+<div id="dialogs">
+    <div class="dialog" id="ljdialog">
+        <div class="close">
+            X
+        </div>
+
+        <p>La Jolla is full of sexy people like these:</p>
+        <img src="img/ljpeople.jpg"/>
+    </div>
+    <div class="dialog" id="miamidialog">
+        <div class="close">
+            X
+        </div>
+
+
+        <img src="img/keep-calm-im-in-miami-bitch.png"/>
+    </div>
+
+
+
+
+</div>
+<div class="dialog" id="fidialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Fraser Island, Australia</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Fraser island is a place of exceptional beauty, with its long uninterrupted white beaches flanked by strikingly coloured sand cliffs, and over 100 freshwater lakes, some tea-coloured and others clear and blue all ringed by white sandy beaches. Ancient rainforests grow in sand along the banks of fast-flowing, crystal-clear creeks.Fraser Island is the only place in the world where tall rainforests are found growing on sand dunes at elevations of over 200 metres. The low "wallum" heaths on the island are of particular evolutionary and ecological significance, and provide magnificent wildflower displays in spring and summer. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/B_fraserisland.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="hamdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Hamptons, New York</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Main Beach Ocean Avenue, East Hampton. There's no better vantage point for watching July 4 fireworks -- if you manage to land a square of sand in the afternoon, you just might want to take that après-surf shower on the premises and settle in for the evening. Keep kids occupied with ice pops from the substantial concession stand.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/B_hampton.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="lbdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Lanikai Beach, Hawaii</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Lanikai  means  "heavenly sea" in the Hawaiian language. And at Lanikai Beach that is exactly what you will find. Warm  turquoise green waters brush up against a fine  sand beach while gentle trade winds offer a cool relief from the hot Hawaiian days. This beach is great for relaxing on the sand or taking a  swim in it's clear waters. Located on Oahu's Windward coast Lanikai Beach is a popular hang out for locals and tourist.  So, bring our swim wear and snorkel gear to enjoy a  day at the beach. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/B_lanikai.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="lmdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Langkawi, Malaysia</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Langkawi, officially known as Langkawi the Jewel of Kedah (Malay: Langkawi Permata Kedah) is an archipelago of 104 islands in the Andaman Sea, some 30 km off the mainland coast of northwestern Malaysia. The islands are a part of the state of Kedah, which is adjacent to the Thai border. On July 15, 2008, Sultan Abdul Halim of Kedah had consented to the change of name to Langkawi Permata Kedah in conjunction with his Golden Jubilee Celebration. By far the largest of the islands is the eponymous Pulau Langkawi with a population of some 64,792, the only other inhabited island being nearby Pulau Tuba. Langkawi is also an administrative district with the town of Kuah as largest town. Langkawi is a duty-free island. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/B_langkawi.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="sbdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>St. Bart's</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The Caribbean’s most elite, most expensive island lives up to its reputation as an adult sandbox, where the rich and famous air-kiss over glasses of rosé. But it still has charms that make it attractive to regular folk, from its uncrowded white-sand beaches to its distinctly Gallic ﬂair. The tidy capital of Gustavia, with its gingerbread-trimmed cases (cottages) and designer shops, surrounds a yacht-ﬁlled harbor. On the opposite side of the island, near the airport, St.-Jean is a diminutive strip of colorful boutiques and beach bars that has been compared to St.-Tropez. Gorgeous, white-sand beaches—22, to be exact—are the trump card of St. Bart's, the Caribbean's most elite (read: most expensive) island. It's got a French vibe, gingerbread-style cottages in the pint-size capital of Gustavia, and the kind of sun great vacations are made of. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/B_stbart.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="acdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Azamara Club, Panama to Central America</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Azamara Club Cruises® includes late night or overnight stays on more than half of all port visits—which means you’ll have even more time to explore the beauty, history and cultures of the Panama Canal, Central America, and California. Celebrate the 100th anniversary of the Panama Canal in 2014, as well as the opening of the second canal locks. Experience the Sea of Cortez during the peak of whale watching season. Embark on an incredible array of Central American explorations—from white beaches and volcanic landscapes to wildly lush rainforests, colonial architecture and Mayan culture. Or cruise up the West Coast of the United States to enjoy some of the world’s best wineries, golf, shopping, and entertainment.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/C_azamara.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="rcdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Royal Caribbean, North America and Caribbean</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Another destination, another WOW. That’s the way we sail at Royal Caribbean International®. Nobody delivers more jaw-dropping, tummy-tickling, romance-kindling moments throughout the Caribbean. Explore the finest white-sand beaches and most translucent blue waters on either of our two private destinations, Labadee® and CocoCay®. Create memorable adventures on your Caribbean cruise that will inspire you for a lifetime. Our fleet is designed to bring you the best in dining, entertainment and activities so that one WOW leads to another and another and another.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/C_royal.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="hadialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Holland America, Central America</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Every stop down Mexico's west coast presents an opportunity to embark on a new adventure. The waters off Cabo San Lucas teem with marlin, swordfish, sailfish, and tuna. Puerto Vallarta mixes busy open markets, upscale shops, and cobbled streets. Step into one of these coastal cities’ many restaurants to sample fresh pescados y mariscos - fish and shellfish - prepared with a distinctly local flair. Watch the annual migration of the gray whale. Walk down miles of uninterrupted beaches. Explore a sleepy Sierra Madre mining town. Onboard the ship, take salsa lessons or relax on your private verandah. With our award-winning shore excursions and onboard amenities tailored to every age and interest, Holland America Line Mexico cruise vacations are a fit for the whole family.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/C_holland.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="rssdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Regent Seven Seas, Caribbean</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The ships of Regent Seven Seas Cruises travel the world seeking out the extraordinary to create the most exotic and memorable travel experiences for our guests. Aboard our medium-sized, intimate ships we declare luxury free of its stuffy connotations and artfully blend the romance of travel with our signature touches of gracious hospitality, six-star dining and all ocean-view accommodations. Our track record for success is proven from one unique destination to another. As the only truly all-inclusive luxury cruise line in the world, Regent Seven Seas Cruises offers original voyages of wonder and adventure. Aboard our inviting, six-star ships that carry just hundreds, not thousands of guests, discover an unmatched, all-inclusive value that covers virtually everything, and an onboard lifestyle that overlooks nothing.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/C_regent.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="pcdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Princess, Caribbean</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Come back new from a cruise on the Caribbean Princess, one of the stars of the destination that bears her name. At her launch in 2004, this incredible ship introduced Movies Under the Stars® - a giant poolside movie theater featuring first run movies, concerts and sporting events. Here you can relax in a cushioned lounger with freshly-popped, complimentary popcorn under the night sky. Onboard, passengers can also enjoy a variety of street performing acts in the Italian-inspired Piazza, indulge in a soothing massage from an outdoor cabana at The Sanctuary, or savor a premium steak cooked to order in the Crown Grillsm.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/C_princess.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="iwmdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Imperial War Museum, London, UK</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>We stumbled into this museum by accident one afternoon when we were looking for something to fill a few hours. One of the best things about London is that so many of their excellent museums are free, making them big-family friendly! We were delighted to find this museum uncrowded and geared to every level of learning. The boys spent a long hour in a mock up of the interior of a submarine while the older girls went with Dad through the holocaust exhibit in preparation for our visit to Germany later in the summer. The exhibits on the effects of WW2 on the country of England are phenomenal and of all of the amazing things we saw in London, this smaller museum ended up being one of the highlights of our city tour.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_imperialmus.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="afhdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Anne Frank House in Amsterdam, NL</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>For weeks before we arrived in the Netherlands we spent evenings in our tent reading The Diary of Anne Frank aloud. We wanted our kids to see the war through the eyes of a real child. Of course when we arrived in Amsterdam a visit to the house where she and her family lived out much of the war in hiding was on our short list of museums to visit. I dare you to visit this little home and come away without tears in your eyes. Snippets of her diary narrate the tour. Household items, a beautiful ceramic toilet, blacked out windows, all tell the story of a childhood lost. Our kids made a connection that day with a little girl who’d walked those halls as her cage, that they could never have made through the book alone.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_annefrank.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="dmdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Deutsches Museum - Munich, Germany</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The Deutsches Museum in Munich, Germany, is the world's largest museum of science and technology, with approximately 1.5 million visitors per year and about 28,000 exhibited objects from 50 fields of science and technology. The museum was founded on June 28, 1903, at a meeting of the Association of German Engineers (VDI) as an initiative of Oskar von Miller. Its official name is Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (English: German Museum of Masterpieces of Science and Technology). It is the largest museum in Munich.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_dutchmus.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="pdadialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Preau des Accoules in Marseilles, FR</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>This children’s museum, housed in a 17th Century Jesuit College has an ever changing kaleidoscope of exhibits. When we first entered we wondered if we’d wasted our time and money. It’s very small, and our kids were borderline “too big” for it. Two hours later, while they were parading around in the costume of French royalty from the turn of the last century, we realized that this little space is a hidden gem in Marseille. If your kids are weary of having plaques read aloud and parading through one more castle or cathedral, take them here. Let them play their way through history, perhaps take up a crayon and have a turn at creating their own classic French art, and absorb the culture in their own way. It only gets a byline in a few of the guidebooks, but if you’ve got little people and you’re in Marseilles for a few days, ferret out this hole in the wall treasure!</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_frenchmus.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="mahdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Museum of Art History in Vienna, AU</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The Kunsthistorisches Museum (Art History Museum) was built in 1891 near the Imperial Palace to house the extensive collections of the imperial family. With its vast array of eminent works and the largest Bruegel collection in the world, it is considered one of the most eminent museums in the world. Numerous major art works of European art history, among them Raphael’s "Madonna in the Meadow," Vermeer’s "The Allegory of Painting," the Infanta paintings by Velazquez, masterworks by Rubens, Rembrandt, Dürer, Titian and Tintoretto are housed in the paintings gallery. The Egyptian and Near Eastern Collection contains fascinating treasures from mysterious cultures long past.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_musart.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="lcrsdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>La Costa Resort and Spa, Carlsbad, CA</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Most commonly associated with its 2 PGA Championship golf courses and a world-class spa, La Costa Resort now earns itself a new reputation: Family Resort. Tucked among the resort's rolling greens, Jim McLean Golf School, and 21 tennis courts is a world of activities designed for little ones on retreat. At Camp La Costa, children experience the resort's magnificent facilities in a kid-friendly environment while parents pursue their own activities without worry. Kids ages 5 - 12 spend the day at the camp, where they engage in tennis, croquet, hiking, swimming, nature walks, crafts and ping-pong. While the kids are making friends and having fun, parents indulge in the body- and soul-soothing luxury that defines La Costa. Whether taking yoga at health guru Deepak Chopra's Chopra Center or soaking away worries in Spa La Costa's Roman pools, adults relish the relaxing treatments. As darkness falls, parents can opt to spend a romantic evening together while sending their children off to Night Camp, which includes dinner, story hour and a scavenger hunt.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_lacosta.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="ssrdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Snowbird Ski Resort, Utah</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>If the sight of snow gets your family excited, grab a pair of skis and head to Snowbird for a wonderful, wintry vacation. The resort rests in Little Cottonwood Canyon, which offers 3,240 feet and 5,000 acres of mountain to explore, and whose proximity to the Great Salt Lake ensures over 500 inches of snow falls annually. Thirty years after being founded, the resort now features 10 lifts, 85 runs and an uphill capacity of 16,000 people. Beginner skiers, from ages 3 to adult, can learn skiing and snowboarding at the Snowbird Mountain School. Love the outdoors but not a fan of the slopes? The resort offers ice skating, snow tubing, snowshoe tours and luge sleds. Parents can unwind with a stone massage or herbal wrap at the luxurious Cliff Spa, or hit Snowbird's shops, selling everything from ski clothes and boots to Chinese silk rugs.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_ski.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="onadialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Out-N-About, Oregon</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Something extraordinary is afoot in the woods of Oregon. Strung high above the earth, nestled into treetops and branches, is 1 of the world's most unique resorts: Treesort. This high-in-the-sky treehouse-resort proves that trees aren't just for the birds. Fourteen treehouses comprise Treesort, and sleep 2 to 8 people. Getting to your room is half the adventure -- guests climb stairs, ladders, even a 90-foot-long suspension bridge. Once there, the wonder begins. At the Swiss Family Complex, a swinging bridge separates child and adult units, and a fire pole and rope swings provide kids with ground access. Luxury lovers will enjoy the Tree Room Schoolhouse Suite, which sleeps 4 and has a bathroom, kitchenette, master bedroom, sitting area and loft.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_out.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="hwvdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Hilton Waikoloa Village, Hawaii</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>If your family is looking for an island excursion to get away from it all, the Hilton Waikoloa Village promises endless activity and unprecedented luxury. Parents hoping to find a child-friendly haven can sign their tykes up for Camp Menehune. This day and night camp allows kids to feed koi and swans, hunt for treasure, and explore tidepools Tropical gardens, saltwater lagoons and 2 golf courses are tempting, but the resort's most popular retreat is Dolphin Quest, providing guests with a variety of interactive dolphin programs. The many activities include Dolphin Training Adventures, a Dolphin Family Program and a Dolphin Twilight Camp for kids. At Waikoloa's 4-acre lagoon, water lovers can schedule kayak trips, snorkel sails and seasonal whale-watch sails. After dark, attend the Legends of the Pacific Luau to experience traditional island dancing and music, as well as a buffet dinner.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_waikoloa.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="tvrdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Tanque Verde Ranch, Arizona</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>City slickers and country folk alike will enjoy their stay at the Tanque Verde Ranch, a family resort aiming to lasso the cowboy outta everyone. Literally meaning "Green Pool," the 640-acre Tanque Verde Ranch is a serene oasis nestled into the Sonoran Desert and adjacent to Saguaro National Park. With over 120 horses, it's no surprise that this dude ranch offers ample riding opportunities. Specialty rides such as the Breakfast Ride (to a meal at the Old Homestead), 6-hour-long Day Rides and Picnic Rides with lunch in Cottonwood Grove are all available. Newcomers can take riding lessons at a variety of levels.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/F_ranch.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="krsdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Katikies Resort and Spa, Santorini, Greece</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>This is a world where the heavenly clarity of light picks up every dazzling white and every shade of blue into what then imprints a magnificent canvas of sublime images onto the human memory. Referred to by guests with a sense of nostalgia at the passing of every perfect waking hour, Katikies Hotels in Santorini form a stunning collection of some of the most acclaimed luxury boutique hotels in the Cycladic islands of Greece. Katikies boutique hotels in Santorini Island, perfectly located in the unique natural environments’ locations of Oia, Imerovigli and Firostefani in Santorini, breathtaking Caldera views cohabit resplendently with these idyllic retreats that express the ultimate in luxury, exclusivity and privacy.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/G_katikies.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="tsdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Sarojin, Khao Lak, Thailand</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>In the spirit of the legendary Lady Sarojin, we carry forward her embodiment of extraordinary hospitality with the same careful attention to detail and lavish personal service. It is indeed, these little things that make the difference; arousing wonder and inspiration in The Sarojin experience. Begin with our luxury airport transfer, complete with cold drinks, your favorite music, an i-pad with hotspot connectivity, and a room service menu. When you arrive at your contemporary Asian style guest residence, your order awaits you. Maybe you'd like one of our unique Imagineered holidays? Perhaps an adventure or a round of golf ? Consider a relaxing spa; to simply wander our tropical grounds; white sand beaches and/or sample our sumptuous restaurants. Whatever your desire, allow The Sarojin family to pamper you as Lady Sarojin would have, herself.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/G_sarojin.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="lpirdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Little Palm Island Resort, Little Torch Key, Florida</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Guests are welcomed with tropical rum punch and their names on wooden plaques on their rooms at this "very private and isolated resort," accessible only by boat or seaplane. The crushed-seashell paths and more than 250 Jamaican coconut palms make guests feel like they are "in the South Pacific." Housing four-poster beds and outdoor showers, renovated thatched-roof bungalows in British colonial decor lack phones, televisions, or clocks, making them "wonderful places to relax and reconnect." The "food is expensive but marvelous" at the restaurant, which serves French and pan-Latin dishes with the occasional wild card, hence Peking duck foie gras and yellowtail snapper seviche. "The staff are the best."</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/G_palm.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="thdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The House, Barbados</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Welcome to The House, an adults-only resort on the world-renowned platinum West coast of Barbados. Unique among destinations in the Caribbean, The House is a chic, tranquil retreat for adults to unwind and reconnect in a setting of understated elegance. Once you settle in to your junior or one-bedroom suite accommodation, pamper yourself with a complimentary jet lag revival massage in a beach cabana before enjoying complimentary afternoon tea and evening canapés. In the evening, stroll hand-in-hand to the Zagat-rated Daphne's Restaurant to dine on gourmet fare before turning in to your suite furnished with deluxe amenities. After sunrise, feast on a complimentary Champagne breakfast and then explore the beauty of Barbados; take a water taxi to other Elegant Hotels West Coast properties, visit the upscale Lime Grove Shopping Centre or take advantage of some of our many on-site activities. Whatever you decide, we hope you enjoy your stay at our adults-only resort. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/G_house.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="jmdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Jade Mountain, St. Lucia</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Rising majestically above the 600 acre beach front resort of Anse Chastanet, Jade Mountain St.Lucia is a cornucopia of organic architecture celebrating St Lucia’s stunning scenic beauty. Architect owner Nick Troubetzkoy has expanded upon his philosophy of building in harmony with Caribbean nature in his creation of Jade Mountain St.Lucia. The bold architectural design – individual bridges leading to exceptional infinity pool sanctuaries and rugged stoned-faced columns reaching towards the sky – makes Jade Mountain St.Lucia one of the Caribbean’s most mesmerizing resort experiences.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/G_lucia.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="ysdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Yellowstone, Wyoming</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>It's a wonderland. Old Faithful and the majority of the world's geysers are preserved here. They are the main reason the park was established in 1872 as America's first national park—an idea that spread worldwide. A mountain wildland, home to grizzly bears, wolves, and herds of bison and elk, the park is the core of one of the last, nearly intact, natural ecosystems in the Earth’s temperate zone.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/N_yellowstone.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="nfdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Niagara Falls, Canada</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>A North American natural wonder, Niagara Falls flows with scenic might through Niagara Falls State Park. And just beyond its waterfall vistas, Niagara is filled with splendid discoveries and fantastic attractions. Pictures are great, but getting close enough to touch Niagara Falls inspires genuine awe. Millions of gallons of water rocket over Niagara Falls every minute – about 750,000 gallons each second! There’s no closer place to “feel Niagara’s flow” than from the decks, boats, vista points and trails of Niagara Falls State Park - America’s oldest state park.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/N_niagara.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="gbrdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Great Barrier Reef, Australia</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>One of Australia's most remarkable natural gifts, the Great Barrier Reef is blessed with the breathtaking beauty of the world's largest coral reef. The reef contains an abundance of marine life and comprises of over 3000 individual reef systems and coral cays and literally hundreds of picturesque tropical islands with some of the worlds most beautiful sun-soaked, golden beaches. The Great Barrier Reef is one of the seven wonders of the natural world, and pulling away from it, and viewing it from a greater distance, you can understand why. It is larger than the Great Wall of China and the only living thing on earth visible from space</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/N_reef.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="rnpdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Redwood National Park, California</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Most people know Redwood as home to the tallest trees on Earth. But the parks also protect vast prairies, oak woodlands, wild riverways, and nearly 40 miles of pristine coastline, all supporting a rich mosaic of wildlife diversity and cultural traditions. Together, the National Park Service and California State Parks manage these lands for the inspiration, enjoyment, and education of all people. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/N_redwood.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="pcdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Panama Canal, Panama</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The Panama Canal (Spanish: Canal de Panamá) is a 77.1-kilometre (48 mi) ship canal in Panama that connects the Atlantic Ocean (via the Caribbean Sea) to the Pacific Ocean. The canal cuts across the Isthmus of Panama and is a key conduit for international maritime trade. There are locks at each end to lift ships up to Gatun Lake, an artificial lake created to reduce the amount of excavation work required for the canal, 26 metres (85 ft) above sea level. The current locks are 33.5 metres (110 ft) wide. A third, wider lane of locks is currently under construction and is due to open in 2015. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/N_panama.jpg"/>
+        </div>
+    </div>
+</div>
+
+<div class="dialog" id="tbtdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>The Bourbon Trail, Kentucky, USA</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>The Scots have their scotch. Italians, their wine. Russians, their vodka. In America, we’ve got our bourbon. Known as “America’s Native Spirit,” it’s the only alcohol that is a distinctive product of the United States. In Kentucky, we take pride in that, especially considering 95 percent of this corn-based, caramel colored sipping icon is distilled, aged and bottled right here in the state’s bourbon country. It’s big business for the Bluegrass State. But more than industry, bourbon is a culture, a history and heritage built by generations of Kentuckians from as early as the late 18th century. Today, you too can experience the culture of Kentucky bourbon country – hit the high points on a self-guided bourbon trail or just stop by your favorite distillery for a tour. Kentucky Bourbon Trail Take the legendary Kentucky Bourbon Trail through the heart of bourbon country and stop in on six of the state’s distilleries including Maker’s Mark, Jim Beam and Woodford Reserve. This trail allows you to tour bourbon country and experience the bourbon making process, view the facilities and amazingly beautiful surrounding landscapes, and stick around for an after-tour bourbon tasting. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/R_btrail.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="fpdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Frank Pepe’s, I-95: New Haven, Connecticut</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>As you're passing through New Haven, you will get a whiff of bubbling, beautifully charred Neapolitan pizzas wafting from just west of the highway. That would be Frank Pepe's, a Connecticut — if not a New England — institution. <b>Road Tip:</b> The white clam pizza is a must. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/R_frank.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="zmdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Zingerman’s, Ann Arbor, Michigan</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Traveling from Detroit to Madison, WI, you'll likely run out of gas. Take a break in Ann Arbor where Zingerman's rules. Famous for their hot, tender pastrami sandwich, they are also a great pit stop to pick up any other holiday party gourmet treats. <b>Road Tip:</b> Before skipping town, be sure to head to Zingerman's bakery and coffeehouse for fresh bread and beans.</p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/R_zingerman.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="jkbdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Jester King Brewery, Austin, Texas</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Located in the beautiful Texas Hill Country, Jester King is an authentic farmhouse brewery committed to making artisan ales of great depth and character. Like the small, farmhouse breweries that inspired us, we seek to embrace nature and local terroir in our brewing, giving our beers a true sense of place. We draw water from our well at the brewery to make our beer and at times call upon naturally occurring yeast from the Texas Hill Country to shape our unique flavors. We use as many organic ingredients as possible with the majority of our beer being USDA Certified Organic. We do not rush beer to market, but instead allow it to mature naturally – often in oak barrels – prior to re-fermentation in the bottle, cask, or keg. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/R_jester.jpg"/>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="bsdialog">
+    <div class="close">
+        X
+    </div>
+    <h3>Big Sur, Pacific Coast, California</h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Convertibles were made for drives like this. After a quick stop inland for a Santa Barbara wine tour, and a peek at majestic Hearst Castle, the route heads up the ruggedly beautiful Big Sur Coast Highway, through giant redwood groves with a backdrop of crashing waves. <b>What to eat along the way:</b> Meats grilled over an open fire of red oak and an excellent wine list make the Hitching Post II a super-popular roadside steakhouse in Buellton; Big Sur Bakery's oversize pastries, beautiful omelets and wood-fired breads provide a thrilling break from burritos and trail mix. </p>
+        </div>
+        <div class="col-lg-6">
+            <img src="img/R_sur.jpg"/>
+        </div>
+    </div>
+</div>
+
+
+<div id="footer">
+    <a href="#"><div id="footerbutton" class="tag">Filters</div></a>
+
+    <div class="container row" id="tables">
+        <div class="row">
+            <div class="col-lg-3" id="continentsTable">
+
+                <h3>Destinations</h3>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-1" class="regular-checkbox a" Value="NorthAmerica"/><label for="checkbox-1-1"></label> North America</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-2" class="regular-checkbox" Value="CentralAmerica"/> <label for="checkbox-1-2"></label> Central America</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-3" class="regular-checkbox c" Value="SouthAmerica"/> <label for="checkbox-1-3"></label> South America</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-4" class="regular-checkbox" Value="Caribbean"/> <label for="checkbox-1-4"></label> Caribbean</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-5" class="regular-checkbox" Value="Europe"/> <label for="checkbox-1-5"></label> Europe</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-6" class="regular-checkbox" Value="Asia"/> <label for="checkbox-1-6"></label> Asia</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-7" class="regular-checkbox" Value="MiddleEast"/> <label for="checkbox-1-7"></label> Middle East</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-8" class="regular-checkbox" Value="Africa"/> <label for="checkbox-1-8"></label> Africa</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-1-9" class="regular-checkbox" Value="Australia"/> <label for="checkbox-1-9"></label> Australia</div>
+            </div>
+            <div  class="col-lg-3" id="thingsToDoTable">
+
+                <h3>Things To Do</h3>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-1" class="regular-checkbox"  Value="Landmarks"/> <label for="checkbox-2-1"></label> Landmarks</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-2" class="regular-checkbox" Value="LocalHangouts" /> <label for="checkbox-2-2"></label> Local Hangouts</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-3" class="regular-checkbox" Value="Museums" /> <label for="checkbox-2-3"></label> Museums</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-4" class="regular-checkbox"  Value="Nightlife"/> <label for="checkbox-2-4"></label> Nightlife</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-5" class="regular-checkbox"  Value="OutdoorAdventures"/> <label for="checkbox-2-5"></label> Outdoor Adventures</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-6" class="regular-checkbox"  Value="Restaurants"/> <label for="checkbox-2-6"></label> Restaurants</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-2-7" class="regular-checkbox" Value="Shopping" /> <label for="checkbox-2-7"></label> Shopping</div>
+            </div>
+            <div class="col-lg-3"  id = "placeToStayTable">
+
+                <h3>Places to Stay</h3>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-1" class="regular-checkbox"  Value="Apartments"/> <label for="checkbox-3-1"></label> Apartments</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-2" class="regular-checkbox"  Value="B&Bs"/> <label for="checkbox-3-2"></label> B & Bs</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-3" class="regular-checkbox" Value="Guesthouses" /> <label for="checkbox-3-3"></label> Guesthouses</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-4" class="regular-checkbox"  Value="Hostels"/> <label for="checkbox-3-4"></label> Hostels</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-5" class="regular-checkbox" Value="Hotels" /> <label for="checkbox-3-5"></label> Hotels</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-6" class="regular-checkbox"  Value="Resorts&Spas"/> <label for="checkbox-3-6"></label> Resorts & Spas</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-3-7" class="regular-checkbox"  Value="Villas"/> <label for="checkbox-3-7"></label> Villas</div>
+            </div>
+            <div class="col-lg-3"  id = "slider">
+
+
+                <h3>Themes</h3>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-1" class="regular-checkbox" Value="Beaches" /> <label for="checkbox-4-1"></label> Beaches</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-2" class="regular-checkbox"  Value="Cruises"/> <label for="checkbox-4-2"></label> Cruises</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-3" class="regular-checkbox"  Value="Family"/> <label for="checkbox-4-3"></label> Family</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-4" class="regular-checkbox"  Value="Grown-UpsOnly"/> <label for="checkbox-4-4"></label> Grown-ups Only</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-5" class="regular-checkbox"  Value="Nature"/> <label for="checkbox-4-5"></label> Nature</div>
+
+                <div class = "tag"><input type="checkbox" id="checkbox-4-6" class="regular-checkbox"  Value="RoadTrips"/> <label for="checkbox-4-6"></label> Road Trips</div>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Price</h3>
+
+                <input type="range" name="points" id="points" value="50" min="0" max="100">Bummin' it<div id="rollin">Rollin' in it</div>
+            </div>
+            <div class="col-lg-2">
+
+                <button id="clearall" class="btn btn-group-lg"><h4>Clear All</h4></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="wrap">
+    <nav class="slide-menu">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.wheelzoom.js"></script>
+<script>
+
+    /*slider script */
+    $(document).ready(function(){
+        var but_list= $('#beach_title, #family_title, #nature_title, #grownup_title, #roadtrip_title, #cruise_title')
+        $(but_list).click(function() {
+            $('#slide-menu').toggle('slide', {direction: 'right'}, 'slow');
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function(){
+        $(".dialog").hide();
+
+        $("input:checkbox").prop('checked', false);
+        alert("Welcome to GlobeTrotter! Use our filters to find the perfect spot for your next vacation. Try dragging the map around! \n\nNote: To appear in your filtered results, a location must satisfy every filter. If you select Central America and Caribbean, your getaway would have to span both. (Try this!) \n\n Map zooming and price filter coming soon! ");
+        $(".marker").draggable();
+        $("#footerbutton").click(function(){
+            $("#tables").slideToggle();
+        });
+        $("#map").draggable();
+
+        $("#map").wheelzoom();
+        $(".marker").tooltip();
+        $(".close").click(function(){
+            $(".dialog").hide();
+
+        });
+
+        $("#clearall").click(function(){
+
+            $("input:checkbox").prop('checked', false);
+            $(".marker").show();
+        });
+        $(".marker").click(function(){
+            $(".dialog").hide();
+            $("#" + $(this).attr("id") + "dialog").show();
+
+        });
+
+        $( "input" ).on( "click", function() {
+            $(".marker").show();
+            $("input:checkbox").each(function(){
+                if(this.checked){
+                    $(".marker").not($("." + $( this).val())).hide();
+                }
+            });
+
+        });
+    });
+</script>
+
+</body>
+</html>
