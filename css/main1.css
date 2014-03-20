@@ -199,8 +199,8 @@ main {
     color:white;
     text-align: right;
     font-size: 64px;
-    margin-top:100px;
-    margin-right:300px;
+    margin-top: 80px;
+    margin-right: -200px;
     font-family: "Source Sans Pro";
     letter-spacing: 2px;
 
@@ -214,11 +214,56 @@ main {
     vertical-align: baseline;
     width:400px;
     line-height: 40px;
-    float:right;
-    margin-top:40px;
-    margin-right:350px;
+    margin-left:750px;
+    margin-top:-20px;
 }
 
+#title_1 {
+    color:white;
+    text-align: right;
+    font-size: 64px;
+    margin-top: 50px;
+    margin-right: 40px;
+    font-family: "Source Sans Pro";
+    letter-spacing: 2px;
+
+}
+
+.bcg_content1 {
+   font-size: 24px;
+    font-family:"Source Sans Pro", sans-serif;
+    text-align: left;  
+    width:400px;
+    line-height: 40px;
+    float:right;
+    margin-top:20px;
+    margin-right:140px;
+}
+
+.filter_img1 {
+    float:left;
+    margin-left:175px;
+    margin-top:-370px;
+}
+
+.other_img1 {
+    float:left;
+    margin-left:480px;
+    margin-top:-415px;
+}
+
+.other_img2 {
+    float:left;
+    margin-left:480px;
+    margin-top:-370px;
+}
+
+.filter_img2 {
+    float:left;
+    margin-left:-70px;
+    margin-top:-110px;
+
+}
 
 
 .bcg {
@@ -241,7 +286,7 @@ main {
     background-image: none; 
     background-color: #000000;
     position: absolute; 
-    height:500px;
+    height:600px;
     color:white;
 }
 
