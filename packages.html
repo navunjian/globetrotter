@@ -11,7 +11,8 @@
 	    <!-- Bootstrap core CSS -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/bootstrap.css" rel="stylesheet">
-	    <link href='http://fonts.googleapis.com/css?family=Fanwood+Text|Niconne|Satisfy|Bad+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fanwood+Text|Niconne|Satisfy|Bad+Script|Source+Sans+Pro|' rel='stylesheet' type='text/css'>
+
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/packages.css">
@@ -24,9 +25,7 @@
     </head>
     <body class="loading">
     
-   		<div id="backgroundImg">
-   			<img src="img/bcg_slide-1.jpg"/>
-   		</div>
+   		
    			<!-- Fixed navbar -->
 			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			    <div class="container">
@@ -68,9 +67,12 @@
 
 									<img id="infoImg" src="img/B_orlando.jpg">
 
-									<p id="topInfo">
-									4-Day Itenerary
-									</p>
+
+									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1">
+  									Four-Day Itinerary
+									</button>
+
+									<div id="demo1" class="panel-collapse collapse">
 
 									<p id="infoDay">
 									Day 1:
@@ -103,10 +105,10 @@
 									-Depart Orlando at 11:00am <br>
 									-Return Home<br>
 									</p>
-									
-
+									</div>
 								</div>
 							</div>
+
 							<div class="col-md-4">
 								<div class="pack-info">
 									<p id="topButton">
@@ -115,9 +117,11 @@
 
 									<img id="infoImg" src="img/C_royal.jpg">
 
-									<p id="topInfo">
-									8-Day Itenerary
-									</p>
+									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2">
+  									Eight-Day Itinerary
+									</button>
+
+									<div id="demo2" class="panel-collapse collapse">
 
 									<p id="infoDay">
 									Day 1:
@@ -170,7 +174,7 @@
 									-Arrive back in Colon, Panama<br>
 									-Visit the Panama Canal
 									</p>
-
+									</div>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -181,10 +185,11 @@
 
 									<img id="infoImg" src="img/F_frenchmus.jpg">
 
-									<p id="topInfo">
-									12-Day Itenerary
-									</p>
+									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">
+  									Twelve-Day Itinerary
+									</button>
 
+									<div id="demo3" class="panel-collapse collapse">
 									<p id="infoDay">
 									Day 1:
 									</p>
@@ -270,13 +275,15 @@
 									<p id="infoBody">
 									-Depart Vienna <br>
 									</p>
-
+									</div>
 								</div>
+
+
 							</div>
 						</div>
 					</div>	
 				</div>
-		    </div>
+			</div>
 
   
 		    

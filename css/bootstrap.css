@@ -2246,18 +2246,21 @@ fieldset[disabled] .btn-warning.active {
   background-color: #fff;
 }
 .btn-danger {
-  color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  margin-top:50px;
+  margin-left:90px;
+  margin-bottom:50px;
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger:active,
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
-  color: #fff;
-  background-color: #d2322d;
-  border-color: #ac2925;
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 .btn-danger:active,
 .btn-danger.active,
