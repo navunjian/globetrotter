@@ -145,33 +145,33 @@ main {
 
 /*  custom slide content */
 #title_3 {
-    text-align: center;
-    font-size: 60px;
+    text-align: right;
+    font-size: 64px;
     margin-top:100px;
-    font-family: "fanwood text";
+    margin-right:200px;
+    font-family: "Source Sans Pro";
+    letter-spacing: 2px;
+
 }
 
-#title_2 {
-    text-align: center;
-    font-size: 60px;
-    margin-top:100px;
-    font-family: "fanwood text";
-}
 
 .bcg_content>p {
-    font-size: 30px;
-    font-family:"fanwood text";
-    text-align: center;  
+    font-size: 24px;
+    font-family:"Source Sans Pro", sans-serif;
+    text-align: right;  
     vertical-align: baseline;
-    width:500px;
-    margin: auto;
-
+    width:400px;
+    line-height: 40px;
+    float:right;
+    margin-top:-100px;
+    margin-right:100px;
 }
 
-.filter_img {
+.other_img {
     float:left;
-    margin-top:-290px;
-    margin-left:150px;
+    margin-left:50px;
+    margin-top:400px;
+    height:300px;
 }
 
 .imgborder {
@@ -179,10 +179,10 @@ main {
     border-radius:10px;
 }
 
-.other_img {
-    float:right;
-    margin-top:-280px;
-    margin-right:30px;
+.filter_img {
+    float:left;
+    margin-left:350px;
+    margin-top:400px;
 }
 
 .mapborder {
@@ -211,7 +211,7 @@ main {
     background-image: none; 
     background-color: #000000;
     position: absolute; 
-    height:600px;
+    height:500px;
     color:white;
 }
 
@@ -226,7 +226,8 @@ main {
 #slide-5 {position: relative;}
 #slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg');}
 #slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
-#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+#slide-5 .bcg3 {
+    background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
 
 
 /*added main page */
