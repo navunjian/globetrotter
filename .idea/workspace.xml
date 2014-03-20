@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26735ff7-2340-4554-a009-3050e93c1437" name="Default" comment="initial commit">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/map.css" afterPath="$PROJECT_DIR$/css/map.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchpage.html" afterPath="$PROJECT_DIR$/searchpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="searchpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/searchpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="772" column="0" selection-start="52280" selection-end="52280" vertical-scroll-proportion="-73.85185" vertical-offset="11902" max-vertical-offset="14112">
+            <state line="749" column="31" selection-start="51387" selection-end="51387" vertical-scroll-proportion="0.38554215" vertical-offset="13162" max-vertical-offset="14832">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.18837209" vertical-offset="0" max-vertical-offset="3384">
+            <state line="66" column="102" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-23.851852" vertical-offset="544" max-vertical-offset="3456">
               <folding />
             </state>
           </provider>
@@ -47,7 +49,7 @@
       <file leaf-file-name="main1.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="0" selection-start="3936" selection-end="3936" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="8280">
+            <state line="202" column="18" selection-start="4252" selection-end="4252" vertical-scroll-proportion="-20.3" vertical-offset="3027" max-vertical-offset="8658">
               <folding />
             </state>
           </provider>
@@ -56,7 +58,16 @@
       <file leaf-file-name="sticky-footer-navbar.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/sticky-footer-navbar.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="792">
+            <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2094" column="28" selection-start="38872" selection-end="38872" vertical-scroll-proportion="0.0" vertical-offset="37548" max-vertical-offset="104382">
               <folding />
             </state>
           </provider>
@@ -65,7 +76,7 @@
       <file leaf-file-name="map.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/map.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="13" selection-start="4838" selection-end="4838" vertical-scroll-proportion="0.0" vertical-offset="6237" max-vertical-offset="6804">
+            <state line="350" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0" vertical-offset="5881" max-vertical-offset="6840">
               <folding />
             </state>
           </provider>
@@ -96,9 +107,9 @@
         <option value="$PROJECT_DIR$/package.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/filter.css" />
+        <option value="$PROJECT_DIR$/css/main1.css" />
         <option value="$PROJECT_DIR$/css/map.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/css/main1.css" />
         <option value="$PROJECT_DIR$/searchpage.html" />
       </list>
     </option>
@@ -203,6 +214,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -407,7 +419,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="3618" max-vertical-offset="35226" />
+        <state line="13" column="30" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="3618" max-vertical-offset="35226">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.wheelzoom.js">
@@ -436,10 +452,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/js/jquery-ui-1.10.4.custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2087" column="19" selection-start="38710" selection-end="38710" vertical-scroll-proportion="-0.35005835" vertical-offset="37866" max-vertical-offset="104310">
-          <folding />
+        <state line="1475" column="22" selection-start="43764" selection-end="43773" vertical-scroll-proportion="-0.96309966" vertical-offset="27072" max-vertical-offset="270252">
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -450,39 +468,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery-ui-1.10.4.custom.js">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1475" column="22" selection-start="43764" selection-end="43773" vertical-scroll-proportion="-0.96309966" vertical-offset="27072" max-vertical-offset="270252">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/map.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="13" selection-start="4838" selection-end="4838" vertical-scroll-proportion="0.0" vertical-offset="6237" max-vertical-offset="6804">
+        <state line="2094" column="28" selection-start="38872" selection-end="38872" vertical-scroll-proportion="0.0" vertical-offset="37548" max-vertical-offset="104382">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="0" selection-start="3936" selection-end="3936" vertical-scroll-proportion="0.0" vertical-offset="2880" max-vertical-offset="8280">
+        <state line="202" column="18" selection-start="4252" selection-end="4252" vertical-scroll-proportion="-20.3" vertical-offset="3027" max-vertical-offset="8658">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/searchpage.html">
+    <entry file="file://$PROJECT_DIR$/css/map.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="772" column="0" selection-start="52280" selection-end="52280" vertical-scroll-proportion="-73.85185" vertical-offset="11902" max-vertical-offset="14112">
+        <state line="350" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0" vertical-offset="5881" max-vertical-offset="6840">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="0.18837209" vertical-offset="0" max-vertical-offset="3384">
+        <state line="66" column="102" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-23.851852" vertical-offset="544" max-vertical-offset="3456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="749" column="31" selection-start="51387" selection-end="51387" vertical-scroll-proportion="0.38554215" vertical-offset="13162" max-vertical-offset="14832">
           <folding />
         </state>
       </provider>
