@@ -140,12 +140,16 @@ body {
     left:27%;
 }
 #ys{
-    Top:38.22%;
+    top:38.22%;
     left:16.27%;
 }
-#pc{
+#pca{
     top:52.55%;
     left:23.77%;
+}
+#pc{
+    top:52%;
+    left:23%;
 }
 #hwv{
     top:56%;
@@ -167,7 +171,7 @@ body {
     top:64.1%;
     left:78.8%;
 }
-#miami {
+#orlando {
     top:44%;
     left:24.4%;
 }
