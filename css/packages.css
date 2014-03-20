@@ -23,12 +23,37 @@ body {
     line-height: 1.4;
 }
 
+a :hover{
+    color: #a9d6fb; !important
+}
+
+#backgroundImg{
+    position: absolute;
+    z-index: -1;
+}
+
+#infoImg{
+    width: 100%;
+    height: 200px;
+
+}
+
 .homebcg_font {
     display:inline-block;
-    font-size:30px;
+    font-size:32px;
     margin-top:30px;
-    letter-spacing: 1px;
     color:white;
+    font-family:"fanwood text";
+}
+
+.pack_font{
+     display:inherit;
+     padding-top: 30px;
+    font-size:32px;
+    margin-top:40px;
+    margin-bottom: 0px;
+    color:white;
+    text-align: center;
     font-family:"fanwood text";
 }
 
@@ -110,94 +135,50 @@ textarea {
    Parallax Scroll
    ========================================================================== */
 body, html {
-    height: 100%;
-    min-height: 100%;
-    background-color: #000000;
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
 }
 body {
-    
+	
 }
 .no-js {
-    padding-top: 106px;
+	padding-top: 106px;
 }
 h2 {
-    margin-top: 0;
+	margin-top: 0;
 }
 .loading {
-    background: url('../img/ico_loading.gif') no-repeat center center;
+	background: url('../img/ico_loading.gif') no-repeat center center;
 }
 section {
-    min-width: 960px;
-    opacity: 0;
+	min-width: 960px;
+	opacity: 0;
 }
 .loaded section,
 .no-js section {
-    opacity: 1;
-    -webkit-transition: opacity 300ms ease-out;
-    -moz-transition: opacity 300ms ease-out;
-    transition: opacity 300ms ease-out;
+	opacity: 1;
+	-webkit-transition: opacity 300ms ease-out;
+	-moz-transition: opacity 300ms ease-out;
+	transition: opacity 300ms ease-out;
 }
-
-
 main {
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
-
-/*  custom slide content */
-#title_3 {
-    text-align: right;
-    font-size: 64px;
-    margin-top:100px;
-    margin-right:200px;
-    font-family: "Source Sans Pro";
-    letter-spacing: 2px;
-
-}
-
-
-.bcg_content>p {
-    font-size: 24px;
-    font-family:"Source Sans Pro", sans-serif;
-    text-align: right;  
-    vertical-align: baseline;
-    width:400px;
-    line-height: 40px;
-    float:right;
-    margin-top:-100px;
-    margin-right:100px;
-}
-
-.other_img {
-    float:left;
-    margin-left:50px;
-    margin-top:400px;
-    height:300px;
-}
-
-.imgborder {
-    border:#f2f2f2 5px solid;
-    border-radius:10px;
-}
-
-.filter_img {
-    float:left;
-    margin-left:350px;
-    margin-top:400px;
-}
-
-.mapborder {
-    border:#aad6fa 5px solid;
-    border-radius:10px;
-}
-
 
 .bcg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.bcg-pack {
+
+    padding-top: 30px;
+
 }
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
@@ -207,13 +188,7 @@ main {
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
-#slide-3 .bcg2 {
-    background-image: none; 
-    background-color: #000000;
-    position: absolute; 
-    height:500px;
-    color:white;
-}
+#slide-3 .bcg2 {background-image: none; background-color: #000000; position: absolute; top: 0; left: 0; height:100%;}
 
 /* Slide 4 */
 .curtainContainer {width: 100%; height: 100%; position: relative;}
@@ -226,9 +201,8 @@ main {
 #slide-5 {position: relative;}
 #slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg');}
 #slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1}
-#slide-5 .bcg3 {
-    background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
-
+#slide-5 .bcg3 {background: none; background-color: #010101; z-index: 2;  position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+#slide-pack {background-image:url('../img/bcg_slide-1.jpg')}
 
 /*added main page */
 
@@ -242,120 +216,140 @@ main {
     border:rgba(0, 0, 25, .8) solid 0px;
 }
 
+.background-pack {
+    width:1200px;
+    height:100%;
+    background: rgba(0, 0, 25, .6);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border-radius:10px;   
+    border:rgba(0, 0, 25, .6) solid 0px;
+}
+
 .bcg-form {
     margin-left:300px;
     margin-top:500px;
 }
 
 .hsContainer {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.ui-widget{
-    z-index: 11;
-}
-.ui-autocomplete {
-    max-height: 200px;
-    overflow-y: auto;
-    /* prevent horizontal scrollbar */
-    overflow-x: hidden;
-}
-/* IE 6 doesn't support max-height
-* we use height instead, but this forces the menu to always be this tall
-*/
-* html .ui-autocomplete {
-    height: 200px;
-}
-
-.ui-widget{
-    z-index: 11;
-}
-.ui-autocomplete {
-    max-height: 200px;
-    overflow-y: auto;
-    /* prevent horizontal scrollbar */
-    overflow-x: hidden;
-}
-/* IE 6 doesn't support max-height
-* we use height instead, but this forces the menu to always be this tall
-*/
-* html .ui-autocomplete {
-    height: 200px;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
 }
 
 .hsContent {
-    max-width: 450px;
-    margin: -150px auto 0 auto;
-    display: table-cell;
-    vertical-align: middle;
-    color: #ebebeb;
-    padding: 0 8%;
-    text-align: center;
-    position: relative;
-    z-index: 10;
+	max-width: 450px;
+	margin: -150px auto 0 auto;
+	display: table-cell;
+	vertical-align: middle;
+	color: #ebebeb;
+	padding: 0 8%;
+	text-align: center;
+	position: relative;
+	z-index: 10;
 }
-    .hsContent h2,
-    .copy h2 {
-        color: #ffffff;
-        font-size: 45px;
-        line-height: 48px;
-        margin-bottom: 12px;
-    }
-    .hsContent p {
-        width: 400px;
-        margin: 0 auto;
-        color: #b2b2b2;
-    }
-    .hsContent a {
-        color: #b2b2b2;
-        text-decoration: underline;
-    }
-    .bgBlack {
-        background-color: rgba(0,0,0,0.75);
-        padding: 3px 10px;
-    }
+	.hsContent h2,
+	.copy h2 {
+		color: #ffffff;
+		font-size: 45px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+		margin: 0 auto;
+		color: #b2b2b2;
+	}
+	.hsContent a {
+		color: #b2b2b2;
+		text-decoration: underline;
+	}
+	.bgBlack {
+		background-color: rgba(0,0,0,0.75);
+		padding: 3px 10px;
+	}
 
 
 /* Navigation */
 #slideNav {
-    display: none;
-    position: fixed;
-    right: 0;
-    top: 50%;
-    margin-top: -80px;
-    z-index: 11;
+	display: none;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -80px;
+	z-index: 11;
 }
 #slideNav ul {
-    list-style: none;
-    color: #000000;
-    font-size: 13px;
-    text-align: center;
+	list-style: none;
+	color: #000000;
+	font-size: 13px;
+	text-align: center;
 }
 #slideNav li {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    background-color: rgba(255,255,255,0.70);
-    margin-bottom: 1px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	background-color: rgba(255,255,255,0.70);
+	margin-bottom: 1px;
 }
 .no-rgba  #slideNav li {background-color: #ffffff}
 #slideNav a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    color: #000000;
+	display: block;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	color: #000000;
 }
 #slideNav a.disabled {
-    cursor: default;
+	cursor: default;
 }
 
+
+/* =======================================
+    Packages Page
+    ====================================== */
+
+.pack-info{
+    margin-left: 20px;
+}
+#topButton{
+    color: #FFF;
+    font-family: "fanwood text";
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+}
+
+#topInfo{
+    padding-left: 10px;
+    color: #FFF;
+    font-family: "fanwood text";
+    font-style: italic;
+    font-size: 18px;
+    text-decoration: underline;
+
+}
+#infoDay{
+    padding-left: 20px;
+    color: #FFF;
+    font-family: "fanwood text";
+    font-style: italic;
+    font-size: 18px;
+}
+
+#infoBody{
+    padding-left: 30px;
+    color: #FFF;
+    font-family: "fanwood text";
+    font-style: italic;
+    font-size: 18px;
+}
 
 /* ==========================================================================
    Helper classes
