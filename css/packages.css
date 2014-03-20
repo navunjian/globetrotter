@@ -27,6 +27,25 @@ a :hover{
     color: #a9d6fb; !important
 }
 
+.contactFormAll{
+    margin-top: 150px;
+}
+.form-horizontal{
+    width:500px;
+}
+
+.conInfo{
+    float:right;
+    margin-top: 50px;
+    text-align: right;
+    font-size: 24px;
+    font-family: "fanwood text"
+}
+
+.conForm{
+    float: left;
+}
+
 #backgroundImg{
     position: absolute;
     z-index: -1;
