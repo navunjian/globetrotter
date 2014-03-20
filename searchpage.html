@@ -645,6 +645,7 @@
                 <button id="clearall" class="btn btn-group-lg"><h4>Clear All</h4></button>
             </div>
 
+            <p id="divs"></p>
         </div>
         <div class="row">
 
@@ -749,7 +750,7 @@
 
         $("input:checkbox").prop('checked', false);
         //alert("Welcome to GlobeTrotter! Use our filters to find the perfect spot for your next vacation. Try dragging the map around! \n\nNote: To appear in your filtered results, a location must satisfy every filter. If you select Central America and Caribbean, your getaway would have to span both. (Try this!) \n\n Map zooming and price filter coming soon! ");
-        $(".marker").draggable();
+
         $("#footerbutton").click(function(){
             $("#tables").slideToggle();
         });
@@ -781,6 +782,10 @@
                 }
             });
 
+        });
+
+        $("input").each(function(){
+            $("#divs").append('"' + $(this).attr("value") + '", ');
         });
 
     });

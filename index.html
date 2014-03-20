@@ -21,6 +21,9 @@
 				font-family: 'Open Sans', sans-serif;
 			}
 		</style>
+        <link
+                rel="stylesheet"
+                href="http://code.jquery.com/ui/1.9.0/themes/smoothness/jquery-ui.css" />
     </head>
     <body class="loading">
     
@@ -60,8 +63,9 @@
 				    		<div class="background">
 				    				<span class="homebcg_font"> Start planning your trip</span>
 					    		<form class="navbar-form" role="search">
-					                  <div class="form-group">
-					                    <input type="text" class="form-control" placeholder="explore the world">
+					                  <div class="form-group ui-widget">
+					                    <input id="auto" type="text" class="form-control" placeholder="Try searching 'America'">
+
 					                  </div>
 					                  <button type="button" class="btn btn-default btn-lg">
 					                    <span class="glyphicon glyphicon-search"></span>
@@ -163,10 +167,20 @@
 		<script src="js/jquery.wheelzoom.js"></script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
+            <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
         <!--[if lt IE 9]>
 		<script type="text/javascript" src="js/skrollr.ie.min.js"></script>
 		<![endif]-->
         <script src="js/_main.js"></script>
-
+            <script>
+                $(function() {
+                    var availableTags = [
+                        "NorthAmerica", "CentralAmerica", "SouthAmerica", "Caribbean", "Europe", "Asia", "MiddleEast", "Africa", "Australia", "Landmarks", "LocalHangouts", "Museums", "Nightlife", "OutdoorAdventures", "Restaurants", "Shopping", "Apartments", "B&Bs", "Guesthouses", "Hostels", "Hotels", "Resorts&Spas", "Villas", "Beaches", "Cruises", "Family", "Grown-UpsOnly", "Nature", "RoadTrips"
+                    ];
+                    $( "#auto" ).autocomplete({
+                        source: availableTags
+                    });
+                });
+            </script>
     </body>
 </html>
