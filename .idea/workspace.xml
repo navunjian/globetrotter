@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="26735ff7-2340-4554-a009-3050e93c1437" name="Default" comment="initial commit">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main1.css" afterPath="$PROJECT_DIR$/css/main1.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/map.css" afterPath="$PROJECT_DIR$/css/map.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchpage.html" afterPath="$PROJECT_DIR$/searchpage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -28,19 +28,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchpage.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="searchpage.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/searchpage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="787" column="64" selection-start="52722" selection-end="52722" vertical-scroll-proportion="-448.66666" vertical-offset="2052" max-vertical-offset="14418">
+            <state line="749" column="31" selection-start="51387" selection-end="51387" vertical-scroll-proportion="0.38554215" vertical-offset="13162" max-vertical-offset="14832">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="26" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.10465116" vertical-offset="810" max-vertical-offset="3456">
+            <state line="66" column="102" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-23.851852" vertical-offset="544" max-vertical-offset="3456">
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="map.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/map.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="364" column="13" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0" vertical-offset="6183" max-vertical-offset="6768">
+            <state line="350" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0" vertical-offset="5881" max-vertical-offset="6840">
               <folding />
             </state>
           </provider>
@@ -107,10 +107,10 @@
         <option value="$PROJECT_DIR$/package.html" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/css/filter.css" />
-        <option value="$PROJECT_DIR$/css/map.css" />
-        <option value="$PROJECT_DIR$/searchpage.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/main1.css" />
+        <option value="$PROJECT_DIR$/css/map.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/searchpage.html" />
       </list>
     </option>
   </component>
@@ -214,6 +214,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -460,13 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/map.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="364" column="13" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.0" vertical-offset="6183" max-vertical-offset="6768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/sticky-footer-navbar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="17" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
@@ -481,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/searchpage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="787" column="64" selection-start="52722" selection-end="52722" vertical-scroll-proportion="-448.66666" vertical-offset="2052" max-vertical-offset="14418">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main1.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="202" column="18" selection-start="4252" selection-end="4252" vertical-scroll-proportion="-20.3" vertical-offset="3027" max-vertical-offset="8658">
@@ -495,9 +482,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/map.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="350" column="1" selection-start="4600" selection-end="4600" vertical-scroll-proportion="0.0" vertical-offset="5881" max-vertical-offset="6840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="26" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.10465116" vertical-offset="810" max-vertical-offset="3456">
+        <state line="66" column="102" selection-start="2826" selection-end="2826" vertical-scroll-proportion="-23.851852" vertical-offset="544" max-vertical-offset="3456">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="749" column="31" selection-start="51387" selection-end="51387" vertical-scroll-proportion="0.38554215" vertical-offset="13162" max-vertical-offset="14832">
           <folding />
         </state>
       </provider>
