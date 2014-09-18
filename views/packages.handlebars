@@ -3,19 +3,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>globetrotter</title>
+        <title>Globetrotter</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 
 	    <!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <link href="css/bootstrap.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Fanwood+Text|Niconne|Satisfy|Bad+Script|Source+Sans+Pro|' rel='stylesheet' type='text/css'>
 
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/packages.css">
+        <link rel="stylesheet" href="css/main1.css">
         <script src="js/modernizr-2.7.1.min.js"></script>
         <style type="text/css">
 			body {
@@ -38,12 +37,12 @@
 			            </button>
 
 			      		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      		<a class="navbar-brand" href="index.html"><img  id="logoimage" src="img/globeFINAL_Color.png"/></a>
+			      		<a class="navbar-brand" href="/"><img id="logoimage" src="img/globeFINAL_Color.png"/></a>
 
-				     	<ul class="nav navbar-nav">
-					        <li><a href="searchpage.html">Explore Map</a></li>
-					        <li class="active"><a href="packages.html">Packages</a></li>
-					        <li><a href="contact.html">Contact</a></li>
+				     	<ul class="nav navbar-nav" id="navnav">
+					        <li><a href="/searchpage">Explore Map</a></li>
+					        <li><a href="/packages">Packages</a></li>
+					        <li><a href="/contact">Contact</a></li>
 				      	</ul>
 			        	</div>
 			    	</div>
@@ -52,245 +51,107 @@
 
 	     	<main>
 
-	        <div id="slide-pack">
-	        	
 	        	<div class="bcg-pack" >
-				    <div class="background-pack" >
+				    	<div class="background-pack" >
 						<p class="pack_font"> Here are some popular trip packages to get you started! </p>
-						<!-- Button trigger modal -->
+
 						<div class="container row">
        						<div class="col-md-4">
-								<div class="pack-info">
-									<p id="topButton">
-									  Orlando, Florida
-									</p>
-
-									<img id="infoImg" src="img/B_orlando.jpg">
-
-
-									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo1">
-  									Four-Day Itinerary
-									</button>
-
-									<div id="demo1" class="panel-collapse collapse">
-
-									<p id="infoDay">
-									Day 1:
-									</p>
-									<p id="infoBody">
-									-Arrive in Orlando, FL at 11:30am <br>
-									-Check-in to <a href="http://www.wyndham.com/hotels/florida/lake-buena-vista/wyndham-lake-buena-vista-resort/hotel-overview" target="_blank"> Wyndham Lake BuenaVista Resort</a> <br>
-									-Enter Disney World Park<br>
-									</p>
-									<p id="infoDay">
-									Day 2:
-									</p>
-									<p id="infoBody">
-									-Eat breakfast at the hotel <br>
-									-Enter Disney World Park<br>
-									-Eat lunch in <a href="https://disneyland.disney.go.com/destinations/downtown-disney-district/" target="_blank"> Downtown Disney </a><br>
-									</p>
-									<p id="infoDay">
-									Day 3:
-									</p>
-									<p id="infoBody">
-									-Spend the day at <a href="https://disneyworld.disney.go.com/destinations/typhoon-lagoon/" target="_blank"> Typhoon Lagoon water park </a><br>
-									-Eat dinner at <a href="https://disneyworld.disney.go.com/dining/hollywood-studios/sci-fi-dine-in-theater/" target="_blank"> Sci-Fi Dine in Theater </a><br>
-									</p>
-									<p id="infoDay">
-									Day 4:
-									</p>
-									<p id="infoBody">
-									-Have breakfast at the hotel<br>
-									-Depart Orlando at 11:00am <br>
-									-Return Home<br>
-									</p>
-									</div>
-								</div>
+									<img id="d1" src="img/B_orlando.jpg" width="300" height="240" />
+										<div class="contenthover">
+	    									<h3>The Family Trip</h3>
+	    									<p>Orlando, Florida: Stay at Wyndham Lake Buena Vista Resort, spend a day at Disney World Park, dine at the best complimentary restaurants, spend a day at Typhoon Lagoon Water Park</p>
+	    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>		
 							</div>
 
 							<div class="col-md-4">
-								<div class="pack-info">
-									<p id="topButton">
-									  Caribbean Cruise
-									</p>
-
-									<img id="infoImg" src="img/C_royal.jpg">
-
-									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo2">
-  									Eight-Day Itinerary
-									</button>
-
-									<div id="demo2" class="panel-collapse collapse">
-
-									<p id="infoDay">
-									Day 1:
-									</p>
-									<p id="infoBody">
-									-Embark on the <a href="http://www.royalcaribbean.com/findacruise/cruiseDetails/itinerary.do?state=&packageCode=VI07S081&hasFireandPolice=&hasMilitary=&hasSenior=&date=&cruiseType=CO" target="_blank"> Vision of the Seas</a><br>
-									-Depart from Colon, Panama in the evening <br>
-									</p>
-									<p id="infoDay">
-									Day 2:
-									</p>
-									<p id="infoBody">
-									-Dock in Cartagena, Columbia for the day <br>
-									-Cruising again by 9:30pm<br>
-									</p>
-									<p id="infoDay">
-									Day 3:
-									</p>
-									<p id="infoBody">
-									-Spend all day cruising<br>
-									</p>
-									<p id="infoDay">
-									Day 4:
-									</p>
-									<p id="infoBody">
-									-Dock in Kralendijk, Bonaire<br>
-									</p>
-									<p id="infoDay">
-									Day 5:
-									</p>
-									<p id="infoBody">
-									-Dock in Orangjestad, Aruba <br>
-									</p>
-									<p id="infoDay">
-									Day 6:
-									</p>
-									<p id="infoBody">
-									-Dock in Willemstad, Curacao
-									</p>
-									<p id="infoDay">
-									Day 7:
-									</p>
-									<p id="infoBody">
-									-Cruise all day on your way back to Panama
-									</p>
-									<p id="infoDay">
-									Day 8:
-									</p>
-									<p id="infoBody">
-									-Arrive back in Colon, Panama<br>
-									-Visit the Panama Canal
-									</p>
-									</div>
-								</div>
+									<img id="d2" src="img/B_caribbean.jpg" width="300" height="240" />
+										<div class="contenthover">
+    									<h3>The Caribbean Getaway</h3>
+    									<p>Destinations: Colon, Panama -- Cartagena, Columbia -- Kralendijk, Bonaire -- Orangjestad, Aruba -- Willemstad, Curacao  </p>
+    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>	
 							</div>
+
 							<div class="col-md-4">
-								<div class="pack-info">
-									<p id="topButton">
-									  European Museum Tour
-									</p>
-
-									<img id="infoImg" src="img/F_frenchmus.jpg">
-
-									<button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo3">
-  									Twelve-Day Itinerary
-									</button>
-
-									<div id="demo3" class="panel-collapse collapse">
-									<p id="infoDay">
-									Day 1:
-									</p>
-									<p id="infoBody">
-									-Arrive in London, UK at 8:30pm <br>
-									-Check-in to the <a href="http://www.hotelarriva.co.uk/" target="_blank"> Arrive Hotel </a><br>
-									-Find dinner in the city
-									</p>
-									<p id="infoDay">
-									Day 2:
-									</p>
-									<p id="infoBody">
-									-Visit <a href="http://www.iwm.org.uk/visits/iwm-london" target="_blank">The Imperial War Museum </a><br>
-									-Explore the area for dinner
-									</p>
-									<p id="infoDay">
-									Day 3:
-									</p>
-									<p id="infoBody">
-									-Visit The London Eye<br>
-									-Stop by Big Ben<br>
-									-Have lunch at <a href="http://web.abbevillekitchen.com/" target="_blank">Abbeville Kitchen</a>
-									</p>
-									<p id="infoDay">
-									Day 4:
-									</p>
-									<p id="infoBody">
-									-Take the <a href="http://www.seat61.com/Netherlands.htm#train+ferry" target="_blank">Dutch Flyer ferry and train to Amsterdam, NL</a> <br>
-									-Checkin to <a href="http://www.lonelyplanet.com/the-netherlands/amsterdam/hotels/rembrandtplein-hotel" target="_blank">Rembrandtplein Hotel</a>
-									</p>
-									<p id="infoDay">
-									Day 5:
-									</p>
-									<p id="infoBody">
-									-Visit <a href="http://www.annefrank.org/" target="_blank">The Anne Frank House </a> <br>
-									-Enjoy lunch at the museum <a href="http://www.annefrank.org/en/Museum/Practical-information/Cafe/" target="_blank"> cafe </a>
-									</p>
-									<p id="infoDay">
-									Day 6:
-									</p>
-									<p id="infoBody">
-									-Tour the <a href="www.amsterdamtulipmuseum.com" target="_blank"> Amsterdam Tulip Museum </a> <br>
-									-Eat dinner at <a href="www.deprins.nl" target="_blank"> De Prins </a>
-									</p>
-									<p id="infoDay">
-									Day 7:
-									</p>
-									<p id="infoBody">
-									-Travel to Paris via the <a href="https://www.thalys.com/nl/nl/" target="_blank"> Thalys train </a> <br>
-									-Check-in to the <a href="http://www.lonelyplanet.com/france/paris/hotels/grand-hotel-leveque" target="_blank"> Grand Hôtel Lévêque </a> <br>
-									</p>
-									<p id="infoDay">
-									Day 8:
-									</p>
-									<p id="infoBody">
-									-Visit <a href="http://www.marvellous-provence.com/family-friendly/marseille-area/preau-des-accoules-childrens-museum" target="_blank"> The Preau des Accoules </a> <br>
-									-Have dessert at Le Glacier du Roi
-									</p>
-									<p id="infoDay">
-									Day 9:
-									</p>
-									<p id="infoBody">
-									-Visit the Eiffel Tower <br>
-									-Take the <a href="http://www.lonelyplanet.com/france/paris/activities/food-drink/eiffel-tower-paris-moulin-rouge-show-seine-river-cruise" target="_blank"> Seine River Cruise </a>
-									</p>
-									<p id="infoDay">
-									Day 10:
-									</p>
-									<p id="infoBody">
-									-Use <a href="http://www.raileurope.com/european-trains/tgv/how-to-book.html?WT.mc_id=CJ.tgv_booking_center.affiliates&AID=8762627&PID=3059758" target="_blank"> Rail Europe </a> to travel to Vienna, Austria <br>
-									-Check-in to the <a href="http://www.lonelyplanet.com/austria/vienna/hotels/gal-apartments-vienna" target="_blank"> Gal Apartments </a> of Vienna <br>
-									-Explore downtown Vienna
-									</p>
-									<p id="infoDay">
-									Day 11:
-									</p>
-									<p id="infoBody">
-									-Visit <a href="http://www.khm.at/en/" target="_blank"> The Museum of Art History </a> all day
-									</p>
-									<p id="infoDay">
-									Day 12:
-									</p>
-									<p id="infoBody">
-									-Depart Vienna <br>
-									</p>
-									</div>
-								</div>
-
-
+									<img id="d3" src="img/F_frenchmus.jpg" width="300" height="240" />
+										<div class="contenthover">
+    									<h3>The European Grand Tour</h3>
+    									<p> Destinations: London, United Kingdom -- Amsterdam, Netherlands -- Paris, France -- Vienna, Austria -- Budapest, Hungary -- Prague -- Czech Republic </p>
+    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>	
 							</div>
 						</div>
-					</div>	
+						<br>
+						<div class="container row">
+							<div class="col-md-4">
+									<img id="d4" src="img/G_katikies.jpg" width="300" height="240" />
+										<div class="contenthover">
+	    									<h3>The Mediterranean Journey</h3>
+	    									<p>Destinations: Mykonos, Greece -- Santorini, Greece -- Manarola, Italy -- Positano, Italy -- Izmir, Turkey --
+	    										Majorca, Spain -- Dubrovnik, Croatia</p>
+	    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>	
+							</div>
+
+							<div class="col-md-4">
+									<img id="d5" src="img/B_vietnam.jpg" width="300" height="240" />
+										<div class="contenthover">
+	    									<h3>The Southeast Asian Adventure</h3>
+	    									<p> Destinations: Phnom Penh, Cambodia -- Hà Nội, Vietnam -- Bangkok, Thailand -- Phuket, Thailand -- Ho Chi Minh City, Vietnam -- Siem Reap, Cambodia </p>
+	    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>	
+							</div>
+
+							<div class="col-md-4">
+									<img id="d6" src="img/B_patagonia.jpg" width="300" height="240" />
+										<div class="contenthover">
+	    									<h3>The South American Trip</h3>
+	    									<p> Destinations: Patagonia, Argentina -- Santiago, Chile -- Buenos Aires, Argentina -- Rio de Janeiro, Brazil -- Montevideo, Uruguay -- Manaus, Brazil </p>
+	    									<p><a href="#" class="mybutton">More details</a></p>
+										</div>	
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
+			</main>
 
-  
-		    
-		</main>
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/contenthover.js"></script>
+        <script>
+        $(document).ready(function(){
+    	$('#d1').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    	$('#d2').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
+		
+    	$('#d3').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
+		
+    	$('#d4').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
+		
+    	$('#d5').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
+		
+    	$('#d6').contenthover({
+    	overlay_background:'#000',
+	   	overlay_opacity:0.8
+		});
+    	});
+		</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/waypoints.min.js"></script>
@@ -301,6 +162,7 @@
 		<script type="text/javascript" src="js/skrollr.ie.min.js"></script>
 		<![endif]-->
         <script src="js/_main.js"></script>
-
+        
+   		
     </body>
 </html>
